@@ -20,6 +20,9 @@
                     <li><a href="step-1-to-5.html">Step 1 to 5</a></li>
                     <li><a href="step-6-to-10.html">Step 6 to 10</a></li>
                     <li>Step 11 to 15</li>
+                    <li><a href="step-16-to-20.html">Step 16 to 20</a></li>
+                    <li><a href="step-21-to-25.html">Step 21 to 25</a></li>
+                    <li><a href="step-26-to-30.html">Step 26 to 30</a></li>
                 </ul>
             </nav>
             <article>
@@ -36,35 +39,33 @@
 					<pre>
 SqlConnection connection = new SqlConnection
 (ConfigurationManager.ConnectionStrings["BitDevConnection"].ConnectionString);
-Person person;
+    Person person;
 
-protected void Page_Load(object sender, EventArgs e)
-{
-    //Create person and pass in connection
-    person = new Person(connection);
-    
-    //Create a list object that will store information about all the people from the database
-    List<PersonInfo> people = new List<PersonInfo>();
-    
-    //Get people information by reference
-    person.Get(ref people);
-    
-    //Clear label
-    lblPeople.Text = String.Empty; 
-    
-    //Display results
-    foreach (PersonInfo p in people)
+    protected void Page_Load(object sender, EventArgs e)
     {
-    	lblPeople.Text += String.Format("{0} {1}", p.FirstName, p.LastName);
-    }
-}</pre>
-					<br/><img src="images/tutorialImage12.jpg" /></li>
+        //Create person and pass in connection
+        person = new Person(connection);
+
+        //Create a list object that will store information about all the people from the database
+        List<PersonInfo> people = new List<PersonInfo>();
+
+        //Get people information by reference
+        person.Get(ref people);
+
+        //Clear label
+        lblPeople.Text = String.Empty;
+
+        //Display results
+        foreach (PersonInfo p in people)
+        {
+            lblPeople.Text += String.Format("{0} {1}", p.FirstName, p.LastName);
+        }
+    }</pre>
+					</li>
                     <li>Run the application, a list of people from the database should show
                 </ol>
 				
-				<a href="step-6-to-10.html">Back &laquo;</a>
-                
-                <p>We hope you have enjoyed the tutorial, and learning how three-tier architecture works. The more you get to know three-tier architecture, the more complex implementations you will be able to build. This was just a basic introduction, and we hope that this tutorial has made you more curious to explore three-tier architecture in more depth.</p>
+				<p><a href="step-6-to-10.html">Back &laquo;</a> <a href="step-16-to-20.html">Next &raquo;</a></p>
 
             
             </article>
