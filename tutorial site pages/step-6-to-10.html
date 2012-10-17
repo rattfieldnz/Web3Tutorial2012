@@ -51,7 +51,8 @@ public Person(SqlConnection connection)
 <p>Below we have a method that will select all the people in the database called Get, that has a pass-by-reference parameter which stores values in a List&lt;PersonInfo&gt; object:</p>
 
 <pre>
-//Grabbing results from the database by reference, the data passed by reference will return a List&lt;PersonInfo&gt; object
+//Grabbing results from the database by reference, the data passed by reference will return a 
+//List&lt;PersonInfo&gt; object
     public void Get(ref List&lt;PersonInfo&gt; people)
     {
         //Open connection
