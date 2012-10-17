@@ -23,17 +23,17 @@
             </nav>
             <article>
             	
-                <p><a href="step-1-to-5.html">&laquo; Back</a> <a href="step-11-to-15.html">Next &raquo;</a></p>
+                <p><a href="step-1-to-5.html" title="Back">&laquo; Back</a> <a href="step-11-to-15.html" title="Next">Next &raquo;</a></p>
                 
                 <ol start="6">
                     <li>Add a class called PersonInfo - this will hold values that we get from the database<br/>
-					<img src="images/tutorialImage4.jpg" /></li>
+					<img src="images/tutorialImage4.jpg" width="796" height="384" alt="Creating the PersonInfo class - image 1" /></li>
                     <li>When the dialog shows click Yes to create the App_Code folder for your classes<br/>
-					<img src="images/tutorialImage5.jpg" /></li>
+					<img src="images/tutorialImage5.jpg" width="796" height="384" alt="Creating the PersonInfo class - image 2" /></li>
                     <li>For each attribute in your table create a property for that attribute, as shown in the example below<br/>
-					<img src="images/tutorialImage6.jpg" /></li>
+					<img src="images/tutorialImage6.jpg" width="796" height="384" alt="Creating the PersonInfo class - image 3" /></li>
                     <li>create a new class called Person, this class will control the person table<br>
-                    <img src="images/tutorialImage7.jpg" /><br>
+                    <img src="images/tutorialImage7.jpg" width="796" height="384" alt="Creating the Person class" /><br>
                     
                     <p>9a. In the person class you will need to add methods that will modify the tblPerson table, you will need one for each action you perform, in this case we will be adding, updating, selecting, and deleting data from the database.
 Firstly you will need to create local variables that get the connection, and pass the connection in through your constructor.
@@ -51,8 +51,8 @@ public Person(SqlConnection connection)
 <p>Below we have a method that will select all the people in the database called Get that has a pass-by-reference parameter that stores values in a List&lt;PersonInfo&gt; object:</p>
 
 <pre>
-//Grabbing results from the database by reference, the data passed by reference will return a List<PersonInfo> object
-    public void Get(ref List<PersonInfo> people)
+//Grabbing results from the database by reference, the data passed by reference will return a List&lt;PersonInfo&gt; object
+    public void Get(ref List&lt;PersonInfo&gt; people)
     {
         //Open connection
         connection.Open();
@@ -101,16 +101,16 @@ public Person(SqlConnection connection)
 
 <p>Other methods you will need are:</p>
 
-<p><pre>void Get(PersonInfo person, int id)</pre> – which will get a person by ID</p>
-<p><pre>void Delete(int id)</pre> – which will delete a person from the databse by ID</p>
-<p><pre>void Update(PersonInfo person)</pre> – which will update a person by ID<br><br></p>
+<pre>void Get(PersonInfo person, int id)</pre><p> – which will get a person by ID</p>
+<pre>void Delete(int id)</pre><p> – which will delete a person from the databse by ID</p>
+<pre>void Update(PersonInfo person)</pre><p> – which will update a person by ID<br><br></p>
 
 					</li>
                     <li>Modify your web.config file and add your connection string<br/>
-					<img src="images/tutorialImage9.jpg" /></li>
+					<img src="images/tutorialImage9.jpg" width="467" height="140" alt="Modifying web.config file with connection settings." /></li>
                 </ol>
                 
-                <p><a href="step-1-to-5.html">&laquo; Back</a> <a href="step-11-to-15.html">Next &raquo;</a></p>
+                <p><a href="step-1-to-5.html" title="Back">&laquo; Back</a> <a href="step-11-to-15.html" title="Next">Next &raquo;</a></p>
             
             </article>
             <footer><p>Web Tutorial created by Josh Hawkhead and Rob Attfield.</p></footer>

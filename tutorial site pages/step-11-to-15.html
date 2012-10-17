@@ -20,24 +20,21 @@
                     <li><a href="step-1-to-5.html">Step 1 to 5</a></li>
                     <li><a href="step-6-to-10.html">Step 6 to 10</a></li>
                     <li>Step 11 to 15</li>
-                    <li><a href="step-16-to-20.html">Step 16 to 20</a></li>
-                    <li><a href="step-21-to-25.html">Step 21 to 25</a></li>
-                    <li><a href="step-26-to-30.html">Step 26 to 30</a></li>
                 </ul>
             </nav>
             <article>
             	
-                <p><a href="step-6-to-10.html">&laquo; Back</a></p>
+                <p><a href="step-6-to-10.html" title="Back">&laquo; Back</a></p>
                 
                 <ol start="11">
                     <li>Create a new main page (Default.aspx) Web Form file
-					<br/><img src="images/tutorialImage8.jpg" /></li>
+					<br/><img src="images/tutorialImage8.jpg" width="796" height="384" alt="Creating main page (Default.aspx) Web Form file" /></li>
 					
-                    <li>Add an object to your form to store the data in, in this example we are using a Label
-					<br/><img src="images/tutorialImage10.jpg" /></li>
+                    <li>Add an object to your form to store the data in - in this example we are using a Label
+					<br/><img src="images/tutorialImage10.jpg" width="796" height="384" alt="Adding a Label element to page - which will display data." /></li>
 					
                     <li>When page loads create person object and get data from the database by reference
-					br creating a List<PersonInfo> object then using person.Get(ref people);
+					br creating a List&lt;PersonInfo&gt; object then using person.Get(ref people);
 					<pre>
 SqlConnection connection = new SqlConnection
 (ConfigurationManager.ConnectionStrings["BitDevConnection"].ConnectionString);
@@ -49,7 +46,7 @@ SqlConnection connection = new SqlConnection
         person = new Person(connection);
 
         //Create a list object that will store information about all the people from the database
-        List<PersonInfo> people = new List<PersonInfo>();
+        List&lt;PersonInfo&gt; people = new List&lt;PersonInfo&gt;();
 
         //Get people information by reference
         person.Get(ref people);
@@ -64,13 +61,13 @@ SqlConnection connection = new SqlConnection
         }
     }</pre>
 					</li>
-                    <li>Run the application, a list of people from the database should show
+                    <li>Run the application - a list of people from the database should now show in the browser.</li>
                 </ol>
                 
                 <p>We hope you have enjoyed the tutorial, and learning how three-tier architecture works. The more you get to know three-tier architecture, the more complex implementations you will be able to build. This was just a basic introduction, and we hope that this tutorial has made you more curious to explore three-tier architecture in more depth.</p>
 
 				
-				<p><a href="step-6-to-10.html">&laquo; Back</a></p>
+				<p><a href="step-6-to-10.html" title="Back">&laquo; Back</a></p>
 
             
             </article>
