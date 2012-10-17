@@ -58,7 +58,7 @@ public Person(SqlConnection connection)
         connection.Open();
 
         //Call procedure to get people from the database
-        command.CommandText = "GetPeople";
+        command.CommandText = "SELECT PersonID, FirstName, LastName FROM tblPerson";
 
         //Execute and get data from query
         SqlDataReader sr = command.ExecuteReader();
