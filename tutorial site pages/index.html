@@ -26,9 +26,28 @@
             
             <p>Welcome to our tutorial everyone!<p>
             
-            <p>Today, we will teach you how to create a web page - using a basic implementation of 3-tier architecture in ASP.NET with C#. Before we begin, we will give you a brief background on three-tier architecture:</p>
+            <p>In this tutorial you will learn how to produce a simple n-Tier application in ASP.NET C#. This application will consist of three layers:</p> 
             
-            <p>Three tier architecture is a type of client-server structure where the user interface, functional process logic ("business rules"), and computer data storage (also data access), are maintained as independant parts. This architecture is also a software architecture and software design pattern. A more in-depth explanation of three-tier architecture can be found by visiting <a href="http://en.wikipedia.org/wiki/Multitier_architecture#Three-tier_architecture" title="An in-depth explanation of 3-tier architecture." target="_blank">this link</a>. Below is a diagram of the three-tier architecture, from Wikipedia:</p>
+            <ol>
+            <li>The presentation layer which will display your content; in this case your .aspx file is your presentation layer.<br><br></li>
+<li>Then your business logic layer - which consists of your classes and logic to get your data from the database. Getting your data from the database is done by using pass-by-reference - more information on pass-by-reference in c# can be found at <a href="http://msdn.microsoft.com/en-us/library/14akc2c7.aspx" title="more information on pass-by-reference in c#" target="_blank">http://msdn.microsoft.com/en-us/library/14akc2c7.aspx</a>.
+In the business logic layer, you create classes that match your database tables - in this tutorial we are using a PersonInfo class that resembles the table in the database.<br><br></li>
+
+<li>Finally the last layer in our n-Tier application is the data layer which is your database.</li>
+</ol>
+
+<p>Before you being this tutorial here is some SQL code for the table you will need in this tutorial:</p>
+
+<pre>
+CREATE TABLE tblPerson
+(
+    PersonID INT NOT NULL,
+    FirstName VARCHAR(30),
+    LastName VARCHAR(30),
+    PRIMARY KEY(PersonID)
+);
+</pre>
+            <p>Also, here is a visual representation of a 3-tier structure - with descriptions for each &quot;layer&quot;, and how they interact with each-other:</p>
             
             <img src="images/Overview_of_a_three-tier_application_vectorVersion.png" width="593" height="531" alt="An overview of a three-tier application." />
 			<p>(<a href="http://en.wikipedia.org/wiki/Multitier_architecture#Three-tier_architecture" title="Wikipedia link on 3-tier architecture">Wikipedia</a>, 2012)</p>
