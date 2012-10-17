@@ -35,7 +35,7 @@
                     <li>create a new class called Person, this class will control the person table<br>
                     <img src="images/tutorialImage7.jpg" width="796" height="384" alt="Creating the Person class" /><br>
                     
-                    <p>9a. In the person class you will need to add methods that will modify the tblPerson table, you will need one for each action you perform, in this case we will be adding, updating, selecting, and deleting data from the database.
+                    <p>9a. In the person class you will need to add methods that will modify the tblPerson table. You will need one for each action you perform - in this case we will be adding, updating, selecting, and deleting data from the database.
 Firstly you will need to create local variables that get the connection, and pass the connection in through your constructor.
 </p>
 
@@ -48,7 +48,7 @@ public Person(SqlConnection connection)
 
 </pre>
 
-<p>Below we have a method that will select all the people in the database called Get that has a pass-by-reference parameter that stores values in a List&lt;PersonInfo&gt; object:</p>
+<p>Below we have a method that will select all the people in the database called Get, that has a pass-by-reference parameter which stores values in a List&lt;PersonInfo&gt; object:</p>
 
 <pre>
 //Grabbing results from the database by reference, the data passed by reference will return a List&lt;PersonInfo&gt; object
